@@ -1,73 +1,124 @@
-# Welcome to your Lovable project
+# 📰 TruthLens – AI Fake News Detection System
 
-## Project info
+TruthLens is an AI-powered Fake News Detection System designed to verify whether a news claim actually exists in the real world and whether it is **Real, Misleading, Fake, or Unverified**.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+The system analyzes the factual basis, logical consistency, scientific validity, and framing of news content, then provides an explainable verdict with confidence scores and trusted sources.
 
-## How can I edit this code?
+PROJECT : https://truthlens-news-detector.lovable.app
+---
 
-There are several ways of editing your application.
+## 🚀 Features
 
-**Use Lovable**
+- 🔍 **Real-world news verification**
+- 🧠 **AI-based classification**
+  - ✅ Real News
+  - ⚠️ Misleading / Partially True
+  - ❌ Fake News
+  - ❓ Unverified
+- 📊 Confidence score for every result
+- 📖 Clear AI explanation (why it is real/fake/misleading)
+- 🕵️ Suspicious elements detection
+- 🧾 Missing or manipulated facts identification
+- 📰 Trusted source matching
+- 🌙 Neon Dark Mode + ☀️ Light Mode
+- 📱 Fully responsive (mobile + desktop)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🧠 How It Works
 
-**Use your preferred IDE**
+### Step 1: Event Existence Check
+The system first checks whether the core event mentioned in the news actually happened.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Step 2: Claim Accuracy Analysis
+It evaluates dates, outcomes, legality, and factual framing.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Step 3: Distortion Detection
+Identifies clickbait language, fear-mongering, exaggeration, or missing context.
 
-Follow these steps:
+### Step 4: Scientific & Logical Validation
+Claims that violate established science or logic are immediately classified as **Fake News**.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Step 5: Final Classification Logic
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+| Condition | Result |
+|--------|--------|
+| Event true + facts accurate | ✅ Real |
+| Event true + distorted facts | ⚠️ Misleading |
+| Event false or disproven | ❌ Fake |
+| Possible but no data | ❓ Unverified |
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## 🧪 Example Classifications
 
-**Edit a file directly in GitHub**
+### ✅ Real News
+> ISRO successfully launched Aditya-L1 mission.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### ⚠️ Misleading
+> ₹2000 notes banned from tomorrow  
+(Event happened, but framing is false)
 
-**Use GitHub Codespaces**
+### ❌ Fake
+> One food can destroy cancer in 7 days  
+(Scientifically disproven)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### ❓ Unverified
+> Government planning a pilot AI governance village  
+(Possible but not confirmed)
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 🎨 UI & Design
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- Neon cyberpunk-inspired UI
+- Glow-based result cards
+- Color-coded verdicts:
+  - Green → Real
+  - Yellow → Misleading
+  - Red → Fake
+  - Blue → Unverified
+- Animated loading & result transitions
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## 🛠️ Tech Stack
 
-## Can I connect a custom domain to my Lovable project?
+- **Frontend:** AI-generated responsive UI
+- **Backend:** AI-based NLP & rule-based classification
+- **Database:** Stores verification history
+- **APIs:** Trusted news & fact-check sources (if available)
 
-Yes, you can!
+*(Generated using an AI app builder platform)*
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 🎯 Use Cases
+
+- Fake news detection for social media
+- College / final-year AI projects
+- Journalism & media verification
+- Resume & interview demonstrations
+- Public misinformation awareness
+
+---
+
+## 📌 Project Status
+
+✔ Core logic implemented  
+✔ Real-world tested scenarios  
+✔ UI & UX completed  
+✔ Ready for demo & deployment  
+
+---
+
+## 📄 License
+
+This project is for educational and demonstration purposes.
+
+---
+
+## 🙌 Author
+
+**Mohd Kaif**  
+AI & Full-Stack Project  
