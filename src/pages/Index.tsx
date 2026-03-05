@@ -74,6 +74,12 @@ const Index = () => {
             <ResultCard result={result} />
           </div>
         )}
+
+        {/* Footer */}
+        <footer className="mt-20 w-full text-center py-6 border-t border-muted/20">
+          <p className="text-xs text-muted-foreground font-body">© 2026 Mohd Kaif</p>
+          <p className="text-xs text-muted-foreground/60 font-body mt-1">Built with AI assistance</p>
+        </footer>
       </div>
     </div>
   );
